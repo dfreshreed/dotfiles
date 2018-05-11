@@ -1,0 +1,14 @@
+[user]
+  name = Danielle Stanton
+  email = delisestanton@gmail.com
+
+[github]
+  user = destanton
+
+[core]
+  excludesfiles = ~/.gitignore_global
+  editor = subl -w
+
+[alias]
+  ls = log --pretty=format:"%C(red)%h%Creset - %C(yellow)[%ad]%Cgreen%d %Creset%s - %C(bold blue)[%cn]" --decorate --date=relative
+  ll = log --pretty=format:"%C(red)%h%Creset - %C(green)%d %Creset%s - %C(bold blue) [%cn]" --decorate --numstat
