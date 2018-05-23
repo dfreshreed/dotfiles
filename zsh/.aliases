@@ -1,0 +1,15 @@
+# zsh aliases
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+
+# git
+alias gs="git status"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gcm="git commit -m"
+alias ga="git add -i"
+alias rake="bundle exec rake"
+alias rspec="bundle exec rspec"
+
+# shortcuts
+alias reload="source ~/.zshrc"
