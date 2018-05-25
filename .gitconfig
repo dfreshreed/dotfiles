@@ -11,4 +11,4 @@
 
 [alias]
   lg = log --pretty=format:'%Cred%h%Creset - %C(yellow)[%cr] %C(green)%d%Creset %s - %C(bold blue)[%cn]%Creset'
-  ll = log --pretty=format:'%C(red)%h%Creset - %C(green)%d %Creset%s - %C(bold blue)[%cn]' --decorate --numstat
+  ln = log --pretty=format:'%C(red)%h%Creset - %C(green)%d %Creset%s - %C(bold blue)[%cn]' --decorate --numstat

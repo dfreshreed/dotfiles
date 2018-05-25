@@ -10,6 +10,8 @@ alias gcm="git commit -m"
 alias ga="git add -i"
 alias rake="bundle exec rake"
 alias rspec="bundle exec rspec"
+alias gll="git lg"
+alias gln="git ln"
 
 # shortcuts
 alias reload="source ~/.zshrc"
