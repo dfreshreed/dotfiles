@@ -1,11 +1,11 @@
 # Set path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set theme
-ZSH_THEME = $HOME/.oh-my-zsh/custom/danifrsh.zsh-theme
-
 # Path to oh-my-zsh installation
-export ZSH = $HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+
+# Set theme
+ZSH_THEME=danifrsh
 
 # command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -19,4 +19,4 @@ eval "$(rbenv init -)"
 
 # Source other oh-my-zsh scripts
 source $ZSH/oh-my-zsh.sh
-source $HOME/zsh/.aliases
+source $HOME/.aliases
