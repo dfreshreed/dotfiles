@@ -1,5 +1,5 @@
 local return_status="%(?:💯 :😈 )"
-PROMPT='${return_status} %{$fg_bold[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+PROMPT='${return_status}%{$fg_bold[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:[%{$fg[magenta]%}"
