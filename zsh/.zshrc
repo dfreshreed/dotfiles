@@ -11,8 +11,7 @@ ZSH_THEME=danifrsh
 # ENABLE_CORRECTION="true"
 
 # oh-my-zsh plugins
-plugins=(git)
-plugins=(git history-substring-search)
+plugins=(git history-substring-search osx)
 
 # load rbenv automatically
 eval "$(rbenv init -)"
