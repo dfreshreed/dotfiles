@@ -46,3 +46,10 @@ ln -sf $DOTFILES_DIR/zsh/.aliases ~
 echo "linking .aliases"
 ln -sf $DOTFILES_DIR/.gitconfig ~
 echo "linking .gitconfig"
+
+# make directory for screenshots.
+# setting default dir to this in macos settings.
+mkdir $HOME/Screenshots
+
+# load macos settings
+source $DOTFILES_DIR/.macos

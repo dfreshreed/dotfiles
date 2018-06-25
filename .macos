@@ -1,0 +1,37 @@
+# MacOS settings
+# A big thanks to Mathias Bynens for all his work on this -- https://mths.be/macos
+# I adapted my own preferences from his MacOS settings. 
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "Danifrsh rMBP"
+
+# Set highlight color to light salmon
+defaults write NSGlobalDomain AppleHighlightColor -string "1.000000 0.721457 0.698458"
+
+# Disable automatic capitalization as it’s annoying when typing code
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Save screenshots to screenshots dir
+defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
+
+# Save screenshots in PNG format
+defaults write com.apple.screencapture type -string "png"
+
+# Set $HOME as the default location for new Finder windows
+# For desktop, use `PfDe` and `file:///full/path/here/`
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+
+# Enable Hidden Files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Use column view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
